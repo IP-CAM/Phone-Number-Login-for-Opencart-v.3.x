@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Login with mobile number and password</name>
+	<code>Login_mobile_number_password</code>
+	<version>2.0</version>
+	<author>AARA Tech</author>
+	<link>https://aaratechnologies.com</link>
+	<file path="system/library/cart/customer.php">
+		<operation>
+			<search>
+				<![CDATA[LOWER(email) = '" . $this->db->escape(utf8_strtolower($email)) . "']]>
+			</search>
+			<add position="replace">
+				<![CDATA[(LOWER(email) = '" . $this->db->escape(utf8_strtolower($email)) . "' OR telephone = '" . $this->db->escape(utf8_strtolower($email)) . "')]]>
+			</add>
+		</operation>
+	</file>
+	<file path="catalog/language/*/account/login.php">
+		<operation>
+			<search>
+				<![CDATA[$_['entry_password']]]>
+			</search>
+			<add position="after">
+				<![CDATA[$_['entry_email']                  = 'E-Mail Address/Telephone';]]>
+			</add>
+		</operation>
+	</file>
+</modification>
