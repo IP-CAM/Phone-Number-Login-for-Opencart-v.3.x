@@ -1,7 +1,7 @@
 # Access Number
 
 ## Description
-**Access Number** is an OpenCart extension that allows customers to sign in with a mobile phone number instead of just email.  
+The **Access Number** extension allows customers to log in with a mobile phone number instead of just an email.  
 Compatible with OpenCart 3.x versions.
 
 ## Features
