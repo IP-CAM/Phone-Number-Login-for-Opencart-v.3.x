@@ -10,6 +10,9 @@ Compatible with OpenCart 3.x versions.
 * Can generate random e-mail address, to allow customer skip e-mail entering during registration.
 * Does not modify system files (OCMOD).
 
+## Restrictions
+The module does not work and is not supported for stores located in the following domains: `.ru`,`.рф`,`.рус`,`.by`,`.бел`,`.su`.
+
 ## Live demo
 * [Admin](https://demo.ocmod.space/a/admin/index.php?route=extension/module/access_number) module settings.
 
